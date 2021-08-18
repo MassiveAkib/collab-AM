@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d01decb334db843ac3c826b6cb9aea, type: 3}
+  m_Name: Gravel
+  m_EditorClassIdentifier: 
+  name: Gravel/Dirt
+  landingSound: {fileID: 8300000, guid: 93fe266b7c17f43489e89e3183d8ef98, type: 3}
+  surfaceFootStepSounds:
+  - {fileID: 8300000, guid: 59073f71893e9ff46a2fd6fcef6c08dd, type: 3}
+  - {fileID: 8300000, guid: 7544aba1ad8486249ae23bfddcb12f60, type: 3}
+  - {fileID: 8300000, guid: 0c831788bba0c1a48bc974fb671bee56, type: 3}
+  - {fileID: 8300000, guid: e9652c2286f0bd642a894654c1bf4690, type: 3}
+  - {fileID: 8300000, guid: a8cfbb735a1235141860164f7b5f135a, type: 3}
+  - {fileID: 8300000, guid: 153353fdc52ac8243a903bca9d942470, type: 3}
+  texture:
+  - {fileID: 2800000, guid: bfd675cc0db1d4656b75dc6d6ba91142, type: 3}

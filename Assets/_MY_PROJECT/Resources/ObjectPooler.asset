@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e671913849a6c644288474d51215a318, type: 3}
+  m_Name: ObjectPooler
+  m_EditorClassIdentifier: 
+  pools:
+  - poolName: IndicatorPoint
+    prefab: {fileID: 5409741887204818381, guid: 3cc4f3c3a552193449404b8f121e20ec, type: 3}
+    budget: 1
+  prewarm: 0

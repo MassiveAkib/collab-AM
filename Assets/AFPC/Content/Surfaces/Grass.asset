@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d01decb334db843ac3c826b6cb9aea, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  name: Grass
+  landingSound: {fileID: 8300000, guid: f5bc96f9b1f1d4c4dbab42d423e05b57, type: 3}
+  surfaceFootStepSounds:
+  - {fileID: 8300000, guid: d365a0dbfa0c4a445abd1b4375653f0b, type: 3}
+  - {fileID: 8300000, guid: d9adc0dab8c8fa24ab9f818c8e3493a7, type: 3}
+  - {fileID: 8300000, guid: 6a972a9d1b82a7649afec72694b998b6, type: 3}
+  - {fileID: 8300000, guid: 9216d32b1e5d2564894d99aa95a02cd4, type: 3}
+  - {fileID: 8300000, guid: 4fd610f0aab6d8442943493bab0c3e43, type: 3}
+  - {fileID: 8300000, guid: ae0b55a87bb5bed41a9d1535b1727ac6, type: 3}
+  texture:
+  - {fileID: 2800000, guid: c6e0767b1f8c34890ac245217f4b9731, type: 3}
