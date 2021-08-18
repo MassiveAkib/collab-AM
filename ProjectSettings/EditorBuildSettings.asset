@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/_MY_PROJECT/Scenes/Menu.unity
     guid: eeadb8f108757d342a02f3174e3d7161
   - enabled: 1
     path: Assets/_MY_PROJECT/Scenes/PlayerScene.unity
@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/_MY_PROJECT/Scenes/Cinematic_PlaneHijack.unity
     guid: 311c970d4b5521141ad37f1c59ae84a0
   - enabled: 1
-    path: Assets/Scenes/Disclaimer.unity
+    path: Assets/_MY_PROJECT/Scenes/Disclaimer.unity
     guid: e2ea887b7215e49408d4b6bbe9354f79
   m_configObjects: {}
