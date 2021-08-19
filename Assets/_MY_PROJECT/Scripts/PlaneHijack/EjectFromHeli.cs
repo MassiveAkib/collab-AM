@@ -6,6 +6,7 @@ using UnityEngine;
 public class EjectFromHeli : MonoBehaviour
 {
     public string _heliTag;
+    public GameObject block;
     private void OnTriggerEnter(Collider other)
     {
         if (!string.IsNullOrEmpty(_heliTag))
@@ -13,6 +14,7 @@ public class EjectFromHeli : MonoBehaviour
             if (other.gameObject.tag == _heliTag)
             {
                 HijackMissionManager.singleton.PlayerExitHeli(true);
+                block.SetActive(true);
             }
         }
             

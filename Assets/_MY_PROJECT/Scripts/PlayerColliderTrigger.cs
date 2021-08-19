@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace MassiveStar
 {
+    
     public class PlayerColliderTrigger : MonoBehaviour
     {
         public string _sceneToLoad;

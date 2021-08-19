@@ -8,6 +8,7 @@ namespace FXnRXn.PlaneHijack
 {
     public class EjectFromCar : MonoBehaviour
     {
+        public GameObject block;
         public string _carTag;
         private void OnTriggerEnter(Collider other)
         {
@@ -16,6 +17,8 @@ namespace FXnRXn.PlaneHijack
                 if (other.gameObject.tag == _carTag)
                 {
                     HijackMissionManager.singleton.PlayerExitButton(true);
+                    
+                    block.SetActive(true);
                 }
             }
             
