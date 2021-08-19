@@ -31,6 +31,9 @@ namespace FXnRXn.PlaneHijack
         [Header("Mission Indicator :")]
        // public List<GameObject> _indicator;
         
+        
+       
+       
         [Header("Player Shooting :")] 
         public GameObject shooting_PlayerObj;
         public GameObject shooting_PlayerUI;
