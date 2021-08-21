@@ -60332,6 +60332,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: FXnRXn.EmergencyLanding.EmergencyLandingMission, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3808460194256449191, guid: b46c2b8656e57be448c1f00ec02c1319, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Cinematic_PlaneHijack
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46c2b8656e57be448c1f00ec02c1319, type: 3}
 --- !u!1 &3814154255761568024
