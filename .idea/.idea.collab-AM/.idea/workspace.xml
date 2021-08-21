@@ -13,6 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348fb5ecc9e4e689f37f7d7fadaea9a27a00/4c/ae376b06/DOTween.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1wtnhMNNO1OHYAGonWW88YUU7PM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,6 +64,7 @@
       <updated>1629286875502</updated>
       <workItem from="1629286886332" duration="216000" />
       <workItem from="1629365909813" duration="3450000" />
+      <workItem from="1629528302646" duration="6572000" />
     </task>
     <servers />
   </component>
