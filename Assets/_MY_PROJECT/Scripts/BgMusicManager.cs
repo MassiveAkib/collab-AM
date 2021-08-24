@@ -110,9 +110,17 @@ public class BgMusicManager : MonoBehaviour
                 source.clip = MusicClips[0];
                 break;
         }*/
-        source.clip = MusicClips[0];
-        source.loop = true;
-        source.Play();
+        if (scene.name == "EmergencyLanding" || scene.name == "PlaneFlyingScene" || scene.name == "PlaneCrash")
+        {
+            source.Stop();
+        }
+        else
+        {
+            source.clip = MusicClips[0];
+            source.loop = true;
+            source.Play();
+        }
+        
         // Only switch the music if it changed
        /* if (source.clip != Audio.clip)
         {
