@@ -74,12 +74,12 @@ public class Engine : MonoBehaviour
 			});
 		}
 
-		// if (other.gameObject.tag == "Water" && _isPlaneCrashed)
-		// {
-		// 	OnPlaneHitWater?.Invoke();
-		// 	rigid.mass = 1000f;
-		// 	rigid.drag = 1f;
-		// }
+		if (other.gameObject.tag == "Water" && _isPlaneCrashed)
+		{
+			OnPlaneHitWater?.Invoke();
+			rigid.mass = 1000f;
+			rigid.drag = 1f;
+		}
 		if(other.gameObject.tag == "Water" && !_isPlaneCrashed)
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);

@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc9b57b0e9048d4a9810950dc717cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicClips:
+  musicClips:
   - {fileID: 8300000, guid: 592467b8fecce2f4599b44c8672e4e56, type: 3}
   Audio: {fileID: 1277692341}
 --- !u!82 &1277692341
@@ -1395,7 +1395,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

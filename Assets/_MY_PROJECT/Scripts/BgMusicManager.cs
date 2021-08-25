@@ -111,7 +111,7 @@ public class BgMusicManager : MonoBehaviour
                 source.clip = MusicClips[0];
                 break;
         }*/
-        if (scene.name == "EmergencyLanding" || scene.name == "PlaneFlyingScene" || scene.name == "PlaneCrash")
+        if (scene.name == "EmergencyLanding" || scene.name == "PlaneFlyingScene" || scene.name == "PlaneCrash" || scene.name == "PlaneParkingScene")
         {
             source.Stop();
         }
