@@ -8,13 +8,12 @@ namespace MassiveStar
     
     public class PlayerColliderTrigger : MonoBehaviour
     {
-        public string _sceneToLoad;
+        public string sceneToLoad;
         private void OnTriggerEnter(Collider other)
         {
-           // IPlayerCollide playerCollide = GetComponentInParent<IPlayerCollide>();
-            if (other.gameObject.tag == "Player")
+            if (other.gameObject.CompareTag("Player"))
             {
-                MissionManager.singleton.OnPlayerCollide(_sceneToLoad);
+                MissionManager.singleton.OnPlayerCollide(sceneToLoad);
             }
         }
     }

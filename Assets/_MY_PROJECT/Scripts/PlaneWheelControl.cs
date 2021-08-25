@@ -8,19 +8,8 @@ public class PlaneWheelControl : MonoBehaviour
         
         private void OnTriggerEnter(Collider other)
         {
-                Debug.Log(other);
-                if (other.gameObject.tag == "Player")
-                {
-                        if (wheel.gameObject.activeSelf)
-                        { 
-                                wheel.gameObject.SetActive(false);
-                        }
-                        else
-                        {
-                                wheel.gameObject.SetActive(true);
-                        }
-                        
-                }
+                if (!other.gameObject.CompareTag("Player")) return;
+                wheel.gameObject.SetActive(!wheel.gameObject.activeSelf);
         }
     
 }

@@ -12,7 +12,7 @@ public class Sound : MonoBehaviour
 
         if (audioSource == null)
         {
-            Debug.LogError("audioSource°¡ ¾ø½À´Ï´Ù.");
+            Debug.LogError("audioSourceï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
         }
     }
 

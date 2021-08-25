@@ -3,13 +3,13 @@ using UnityEngine;
 public class PointControl : MonoBehaviour
 {
     public GameObject[] points;
-    GameObject point;
+    private GameObject _point;
     void Start()
     {
         
-        point = points[Random.Range(0,4)];
+        _point = points[Random.Range(0,4)];
 
-        point.SetActive(true);
+        _point.SetActive(true);
     }
 
 }

@@ -8,8 +8,7 @@ namespace FXnRXn.PlaneHijack.Cinematic
 {
     public class LoadSceneWithName : MonoBehaviour
     {
-
-
+        
         public void SceneToLoad(string scene)
         {
             SceneManager.LoadScene(scene);

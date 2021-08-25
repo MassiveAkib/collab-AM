@@ -16,12 +16,10 @@ namespace FXnRXn.Helicopter
         private void OnTriggerEnter(Collider other)
         {
             if (string.IsNullOrEmpty(_targetObjTag)) return;
-            
-            if (other.CompareTag(_targetObjTag))
-            {
-                Debug.Log("Collide with Player");
-                OnCollide?.Invoke();
-            }
+
+            if (!other.CompareTag(_targetObjTag)) return;
+            Debug.Log("Collide with Player");
+            OnCollide?.Invoke();
         }
     }
 }

@@ -5,12 +5,12 @@ using UnityEngine;
 public class ImageControl : MonoBehaviour
 {
     public GameObject[] images;
-    GameObject image;
+    GameObject _image;
     void Start()
     {
 
-        image = images[Random.Range(0, 3)];
+        _image = images[Random.Range(0, 3)];
 
-        image.SetActive(true);
+        _image.SetActive(true);
     }
 }

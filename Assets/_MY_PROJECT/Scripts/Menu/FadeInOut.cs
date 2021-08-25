@@ -9,7 +9,7 @@ public class FadeInOut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int i = images.Length-1;
+        var i = images.Length-1;
         Debug.Log(i);
         while (i > 0)
         {
@@ -22,7 +22,7 @@ public class FadeInOut : MonoBehaviour
     // Update is called once per frame
     private IEnumerator FadeIn()
     {
-        int i = images.Length-1;
+        var i = images.Length-1;
         while (i > 0)
         {
             images[i].gameObject.SetActive(true);

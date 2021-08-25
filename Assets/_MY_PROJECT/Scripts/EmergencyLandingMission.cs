@@ -3,32 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 namespace FXnRXn.EmergencyLanding
 {
     public class EmergencyLandingMission : MonoBehaviour
     {
     
-        public static EmergencyLandingMission singleton;
+        public static EmergencyLandingMission Singleton;
 
         private void Awake()
         {
-            if (singleton == null)
+            if (Singleton == null)
             {
-                singleton = this;
+                Singleton = this;
             }
         }
 
-        public GameObject _gameOverPanel;
+        public GameObject gameOverPanel;
 
         private void Start()
         {
-            _gameOverPanel.SetActive(false);
+            gameOverPanel.SetActive(false);
         }
 
         public void EmergencyLandingPointReached()
         {
-            _gameOverPanel.SetActive(true);
+            gameOverPanel.SetActive(true);
         }
 
         public void SceneToLoad(string scene)

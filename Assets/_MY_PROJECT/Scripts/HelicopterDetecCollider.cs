@@ -6,14 +6,14 @@ namespace FXnRXn.PlaneHijack
 {
     public class HelicopterDetecCollider : MonoBehaviour
     {
-        public string _playerTag;
+        public string playerTag;
 
 
         private void OnTriggerStay(Collider other)
         {
-            if(string.IsNullOrEmpty(_playerTag)) return;
+            if(string.IsNullOrEmpty(playerTag)) return;
             
-            if (other.gameObject.tag == _playerTag)
+            if (other.gameObject.CompareTag(playerTag))
             {
                 HijackMissionManager.singleton.HeliEnterButton(true);
             }
@@ -21,7 +21,7 @@ namespace FXnRXn.PlaneHijack
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.gameObject.tag == _playerTag)
+            if (other.gameObject.CompareTag(playerTag))
             {
                 HijackMissionManager.singleton.HeliEnterButton(false);
             }

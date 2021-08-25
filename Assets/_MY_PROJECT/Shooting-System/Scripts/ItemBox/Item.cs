@@ -23,11 +23,11 @@ public class Item : MonoBehaviour
     private void Awake()
     {
         playerMove = FindObjectOfType<PlayerMove>();
-        if (playerMove == null) Debug.LogError("PlayerMove°¡ ¾ø½À´Ï´Ù.");
+        if (playerMove == null) Debug.LogError("PlayerMoveÂ°Â¡ Â¾Ã¸Â½Ã€Â´ÃÂ´Ã™.");
 
-        if (audioSource == null) Debug.LogError("audioSource°¡ ¾ø½À´Ï´Ù.");
+        if (audioSource == null) Debug.LogError("audioSourceÂ°Â¡ Â¾Ã¸Â½Ã€Â´ÃÂ´Ã™.");
 
-        if (sound[0] == null) Debug.LogError("sound´Â 1°³ ÀÌ»ó ÀÖ¾î¾ß ÇÕ´Ï´Ù.");
+        if (sound[0] == null) Debug.LogError("soundÂ´Ã‚ 1Â°Â³ Ã€ÃŒÂ»Ã³ Ã€Ã–Â¾Ã®Â¾ÃŸ Ã‡Ã•Â´ÃÂ´Ã™.");
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -39,16 +39,16 @@ public class Item : MonoBehaviour
                 case ItemEnum.ATKUP:
                     playerMove.damage += atkUpValue;
                     GameManager.Instance.AttackTextUI((int)playerMove.damage);
-                    PoolManager.GetItem<ItemText>().ShowText("°ø°İ·Â ¾÷", Color.green);
+                    PoolManager.GetItem<ItemText>().ShowText("Â°Ã¸Â°ÃÂ·Ã‚ Â¾Ã·", Color.green);
                     break;
                 case ItemEnum.DEFUP:
                     playerMove.def += defUpValue;
                     GameManager.Instance.DefTextUI(playerMove.def);
-                    PoolManager.GetItem<ItemText>().ShowText("¹æ¾î·Â ¾÷", Color.cyan);
+                    PoolManager.GetItem<ItemText>().ShowText("Â¹Ã¦Â¾Ã®Â·Ã‚ Â¾Ã·", Color.cyan);
                     break;
                 case ItemEnum.HPUP:
                     playerMove.Hp += hpUpValue;
-                    PoolManager.GetItem<ItemText>().ShowText("Ã¼·Â È¸º¹", Color.red);
+                    PoolManager.GetItem<ItemText>().ShowText("ÃƒÂ¼Â·Ã‚ ÃˆÂ¸ÂºÂ¹", Color.red);
                     break;
             }
 

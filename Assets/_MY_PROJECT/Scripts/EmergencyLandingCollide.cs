@@ -8,16 +8,16 @@ namespace FXnRXn.EmergencyLanding
     public class EmergencyLandingCollide : MonoBehaviour
     {
         
-        public string _playerTag;
+        public string playerTag;
 
 
         private void OnTriggerEnter(Collider other)
         {
-            if(string.IsNullOrEmpty(_playerTag)) return;
+            if(string.IsNullOrEmpty(playerTag)) return;
             
-            if (other.gameObject.tag == _playerTag)
+            if (other.gameObject.CompareTag(playerTag))
             {
-                EmergencyLandingMission.singleton.EmergencyLandingPointReached();
+                EmergencyLandingMission.Singleton.EmergencyLandingPointReached();
             }
         }
         

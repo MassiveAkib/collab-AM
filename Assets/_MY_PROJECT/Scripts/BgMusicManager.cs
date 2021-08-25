@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class BgMusicManager : MonoBehaviour
 {
-    public static BgMusicManager instance;
+    private static BgMusicManager _instance;
 
     // Drag in the .mp3 files here, in the editor
-    public AudioClip[] MusicClips;
+    public AudioClip[] musicClips;
 
     public AudioSource Audio;
 
@@ -17,7 +18,7 @@ public class BgMusicManager : MonoBehaviour
     // Singelton to keep instance alive through all scenes
     void Awake()
     {
-        if (instance == null) { instance = this; }
+        if (_instance == null) { _instance = this; }
         else { Destroy(gameObject); }
 
         DontDestroyOnLoad(gameObject);
@@ -116,7 +117,7 @@ public class BgMusicManager : MonoBehaviour
         }
         else
         {
-            source.clip = MusicClips[0];
+            source.clip = musicClips[0];
             source.loop = true;
             source.Play();
         }

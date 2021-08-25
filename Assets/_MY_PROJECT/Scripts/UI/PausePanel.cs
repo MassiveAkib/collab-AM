@@ -9,31 +9,31 @@ public class PausePanel : MonoBehaviour
 {
 
     public GameObject crossIcon;
-    public GameObject Panel;
+    public GameObject panel;
 
 
     private void Awake()
     {
-        if (crossIcon == null || Panel == null) return;
+        if (crossIcon == null || panel == null) return;
 
         crossIcon.SetActive(true);
-        Panel.SetActive(false);
+        panel.SetActive(false);
     }
 
     public void OnPause()
     {
-        if (crossIcon == null || Panel == null) return;
+        if (crossIcon == null || panel == null) return;
         crossIcon.SetActive(false);
-        Panel.SetActive(true);
+        panel.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void OnUnpause()
     {
-        if (crossIcon == null || Panel == null) return;
+        if (crossIcon == null || panel == null) return;
         Time.timeScale = 1f;
         crossIcon.SetActive(true);
-        Panel.SetActive(false);
+        panel.SetActive(false);
     }
 
     public void Replay()
