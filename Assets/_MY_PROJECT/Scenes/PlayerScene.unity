@@ -681,7 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80aa24076ee9ed43a762aecbd6bdc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneToLoad: PlaneFlyingScene
+  sceneToLoad: PlaneFlyingScene
 --- !u!1 &103964124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,7 +3145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80aa24076ee9ed43a762aecbd6bdc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneToLoad: PlaneFlyingScene
+  sceneToLoad: PlaneFlyingScene
 --- !u!1001 &605173206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4695,7 +4695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crossIcon: {fileID: 0}
-  Panel: {fileID: 0}
+  panel: {fileID: 0}
 --- !u!114 &986567018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5687,7 +5687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80aa24076ee9ed43a762aecbd6bdc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneToLoad: PlaneFlyingScene
+  sceneToLoad: PlaneFlyingScene
 --- !u!65 &1154230719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5933,7 +5933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80aa24076ee9ed43a762aecbd6bdc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneToLoad: PlaneFlyingScene
+  sceneToLoad: PlaneFlyingScene
 --- !u!65 &1225685934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7739,7 +7739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80aa24076ee9ed43a762aecbd6bdc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneToLoad: PlaneFlyingScene
+  sceneToLoad: PlaneFlyingScene
 --- !u!1001 &1466279009
 PrefabInstance:
   m_ObjectHideFlags: 0
